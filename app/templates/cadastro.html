@@ -1,3 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}CONECTA-HUB{% endblock %}
+
+{% block content %}
+<h1>{{ request.endpoint }}</h1>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -113,6 +120,7 @@ button:hover {
 
        <div for="cidade">Cidade</div>
        <input type="text" id="cidade" name="cidade" required>
+      {% endblock %}
 
       <button type="submit">Cadastrar</button>
     </form>
